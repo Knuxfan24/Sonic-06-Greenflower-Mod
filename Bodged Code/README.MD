@@ -1,5 +1,9 @@
 This folder contains various code hacks or badly written pieces of software which were used to help with this project.
 
+* XNO Converter is bollocks
+
+A program I made (evidently when really frustrated) to help with the tedious process of converting models to XNO. Used in conjunciton with an [AutoHotKey](https://www.autohotkey.com/) script (creatively named `fuck.ahk`) that would close the XNO Converter window whenever I right clicked.
+
 * Zone Builder Edits
 
 A few source code files of modifications made to [Zone Builder](https://git.magicalgirl.moe/MascaraSnake/ZoneBuilder/tree/e8e87bf8f184318bce73fb6cb129b9a7203b344e) with the intent of making the OBJ export slightly less broken (by removing the pathetic attempt to "optimise" the terrain export) and allowing me to dump out a list of the objects, their positions and their rotations. Due to not understanding how the ExportToObj function worked, I always just hijacked the OBJ Export code to print that list and simply commented my addition out whenever I needed to export terrain.
