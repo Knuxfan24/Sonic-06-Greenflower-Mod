@@ -1,0 +1,20 @@
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.exe.config
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.exe
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.pdb
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\HedgeLib.dll
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.csprojAssemblyReference.cache
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.csproj.CopyComplete
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.exe
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.pdb
+C:\Users\Knuxfan24\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.exe.config
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.exe
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.pdb
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.csprojAssemblyReference.cache
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.csproj.CoreCompileInputs.cache
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.csproj.CopyComplete
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.exe
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.pdb
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\HedgeLib.dll
+C:\Users\Knuxf\source\repos\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\HedgeLib.pdb
