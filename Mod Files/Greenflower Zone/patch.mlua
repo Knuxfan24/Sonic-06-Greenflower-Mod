@@ -9,3 +9,8 @@ TextEdit("core\text\english\msg_mainmenu.e.mst"|"kingdomvalley"|""|"GREENFLOWER 
 TextEdit("core\text\english\msg_system.e.mst"|"msg_hard"|""|"DEV. TIME TRIAL")
 TextEdit("core\text\english\msg_twn_sonic.e.mst"|"msg_act12"|""|"Get to the secret Goal Ring!")
 EndBlock("core\archives\text.arc")
+
+DecryptExecutable()
+DecompressExecutable()
+WriteTextBytes(Executable|0x3F00|"lava")
+WriteNullBytes(Executable|0x3F04|3)
