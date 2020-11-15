@@ -33,9 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HedgeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\HedgeLib-06\HedgeLib\bin\Debug\HedgeLib.dll</HintPath>
+    <Reference Include="HedgeLib">
+      <HintPath>..\..\..\..\HedgeLibMy\HedgeLib\bin\Debug\HedgeLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

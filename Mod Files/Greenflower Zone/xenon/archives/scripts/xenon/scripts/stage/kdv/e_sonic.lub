@@ -1,0 +1,20 @@
+KingdomValley.SonicE = inherits_from(ActionArea)
+function KingdomValley.SonicE.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct KingdomValley.SonicE")
+end
+function KingdomValley.SonicE.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
+    Game.LoadTerrain("stage/kdv/e/"),
+    Game.LoadStageSet("placement/gfz/act1/old/set_gfz_sonic.XML"),
+    Game.LoadStageSet("placement/gfz/act1/old/set_gfz_ambience.XML", "particle"),
+    Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_e.lua"),
+    Game.LoadPath("placement/gfz/act1/old/gfz_lightdash"),
+    Game.LoadSoundBank("sound/stage_kdv"),
+    Game.LoadVoiceBank("sound/voice_kdv_e"),
+    Game.PlayBGM("stg_gfz_act1_old")
+  })
+  Game.SetPlayer(-144, 0, 432, 135, "sonic_new.lua")
+end

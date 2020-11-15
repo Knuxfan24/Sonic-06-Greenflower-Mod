@@ -15,29 +15,29 @@ namespace Zone_Builder_Things_to_S06
         {
             S06SetData targetSet = new S06SetData();
             
-            string[] thingList = File.ReadAllLines("Z:\\Things.txt");
+            string[] thingList = File.ReadAllLines("Y:\\ThingsTHZ1.txt");
             int plantNumber = 0;
-            //foreach (string thing in thingList)
-            //{
-            //    string[] tempLine = thing.Split('|'); //0 is Object, coords are 1,2,3, angle is 4
-            //    switch (tempLine[0])
-            //    {
-            //        case "Torch Flower":
-            //            using (StreamWriter log = new StreamWriter(@"Z:\TFLOA0.ms", append: true))
-            //            {
-            //                log.WriteLine("mergeMAXFile \"C:\\Users\\Knuxf\\Documents\\3dsMax\\scenes\\Sonic '06\\Red Volcano Zone\\Flowers\\TFLOA0.max\" #useMergedMtlDups");
-            //                log.WriteLine("a = $kdv_torchlight_nos_lv2");
-            //                log.WriteLine("a.Name = \"TFLOA0_" + plantNumber + "\"");
-            //                log.WriteLine("a.pos.x = " + tempLine[1]);
-            //                log.WriteLine("a.pos.y = " + -(float.Parse(tempLine[3])));
-            //                log.WriteLine("a.pos.z = " + tempLine[2]);
-            //                //log.WriteLine("a.rotation = eulerAngles 0 0 " + tempLine[4]);
-            //            }
-            //            plantNumber++;
-            //            break;
-            //    }
-            //}
-            //return;
+            foreach (string thing in thingList)
+            {
+                string[] tempLine = thing.Split('|'); //0 is Object, coords are 1,2,3, angle is 4
+                switch (tempLine[0])
+                {
+                    case "THZ Flower":
+                        using (StreamWriter log = new StreamWriter(@"Y:\THZPA0.ms", append: true))
+                        {
+                            log.WriteLine("mergeMAXFile \"C:\\Users\\Knuxf\\Documents\\3dsMax\\scenes\\Flowers\\THZPA0.max\" #useMergedMtlDups");
+                            log.WriteLine("a = $w1_gism_plantDa");
+                            log.WriteLine("a.Name = \"THZPA0_" + plantNumber + "\"");
+                            log.WriteLine("a.pos.x = " + tempLine[1]);
+                            log.WriteLine("a.pos.y = " + -(float.Parse(tempLine[3])));
+                            log.WriteLine("a.pos.z = " + tempLine[2]);
+                            //log.WriteLine("a.rotation = eulerAngles 0 0 " + tempLine[4]);
+                        }
+                        plantNumber++;
+                        break;
+                }
+            }
+            return;
             List<string> unknownObjects = new List<string> { };
 
             //SetObject dubObject = new SetObject();
@@ -100,6 +100,7 @@ namespace Zone_Builder_Things_to_S06
                     //case "Crawla (Blue)":
                     //case "Crawla (Red)":
                     //case "MT_BLUECRAWLACLASSIC":
+                    //case "MT_REDCRAWLA":
                     //    objectType = "enemy";
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eGunner"));
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
@@ -113,53 +114,57 @@ namespace Zone_Builder_Things_to_S06
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eFlyer_Fix_Vulcan"));
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
                     //    break;
-                    //case "Buzz (Gold)":
-                    //case "Buzz (Red)":
-                    //    objectType = "enemy";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eGunner(Fly)"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eGunnerFly_Fix"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
-                    //    break;
-                    //case "Crawla Commander":
-                    //    objectType = "enemy";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eCannon"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eCannon_Fix"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
-                    //    break;
-                    //case "Unidus":
-                    //    objectType = "enemy";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cCrawler"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cCrawler_Fix"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
-                    //    break;
-                    //case "Pyre Fly":
-                    //    objectType = "enemy";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 1));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker_Fix"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
-                    //    break;
-                    //case "Dragonbomber":
-                    //    objectType = "enemy";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 1));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker_Normal"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
-                    //    break;
-                    //case "Pterabyte Spawner":
-                    //    objectType = "enemy";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTaker"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTaker_Fix"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
-                    //    break;
+                    ////case "Buzz (Gold)":
+                    ////case "Buzz (Red)":
+                    ////    objectType = "enemy";
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eGunner(Fly)"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eGunnerFly_Fix"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
+                    ////    break;
+                    ////case "Crawla Commander":
+                    ////    objectType = "enemy";
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eCannon"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eCannon_Fix"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
+                    ////    break;
+                    ////case "Unidus":
+                    ////    objectType = "enemy";
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cCrawler"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cCrawler_Fix"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
+                    ////    break;
+                    ////case "Pyre Fly":
+                    ////    objectType = "enemy";
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 1));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker_Fix"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
+                    ////    break;
+                    ////case "Dragonbomber":
+                    ////    objectType = "enemy";
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 1));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTricker_Normal"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
+                    ////    break;
+                    ////case "Pterabyte Spawner":
+                    ////    objectType = "enemy";
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTaker"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 0));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "cTaker_Fix"));
+                    ////    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
+                    ////    break;
                     //case "Super Ring (10 Rings)":
                     //case "Eggman":
                     //    objectType = "itemboxg";
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 2));
+                    //    break;
+                    //case "MT_HYPERRINGBOX":
+                    //    objectType = "itemboxg";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(int), 3));
                     //    break;
                     //case "Extra Life":
                     //    objectType = "itemboxg";
@@ -185,6 +190,7 @@ namespace Zone_Builder_Things_to_S06
                     //    break;
                     //case "Emblem":
                     //case "Emerald Token":
+                    //case "Special Stage Token":
                     //    objectType = "medal_of_royal_bronze";
                     //    break;
                     //case "Diagonal Yellow Spring":
@@ -269,41 +275,41 @@ namespace Zone_Builder_Things_to_S06
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eGunner_Fix_Vulcan"));
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
                     //    break;
-                    //case "Water Ambience A (Large)":
-                    //    objectType = "ambience";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "break"));
-                    //    break;
-                    //case "Water Ambience C (Medium)":
-                    //    objectType = "ambience";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge2"));
-                    //    break;
-                    //case "Water Ambience D (Medium)":
-                    //    objectType = "ambience";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope_hard"));
-                    //    break;
-                    //case "Water Ambience E (Small)":
-                    //    objectType = "ambience";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge"));
-                    //    break;
-                    //case "Water Ambience F (Small)":
-                    //    objectType = "ambience";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope"));
-                    //    break;
-                    //case "Water Ambience G (Extra Large)":
-                    //    objectType = "ambience";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rockfall"));
-                    //    break;
-                    //case "Water Ambience H (Extra Large)":
-                    //    objectType = "ambience";
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rocksplash"));
-                    //    break;
+                    case "Water Ambience A (Large)":
+                        objectType = "ambience";
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "break"));
+                        break;
+                    case "Water Ambience C (Medium)":
+                        objectType = "ambience";
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge2"));
+                        break;
+                    case "Water Ambience D (Medium)":
+                        objectType = "ambience";
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope_hard"));
+                        break;
+                    case "Water Ambience E (Small)":
+                        objectType = "ambience";
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge"));
+                        break;
+                    case "Water Ambience F (Small)":
+                        objectType = "ambience";
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope"));
+                        break;
+                    case "Water Ambience G (Extra Large)":
+                        objectType = "ambience";
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rockfall"));
+                        break;
+                    case "Water Ambience H (Extra Large)":
+                        objectType = "ambience";
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rocksplash"));
+                        break;
                     //case "Torch Flower":
                     //    objectType = "particle";
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "map_flc"));
@@ -317,11 +323,11 @@ namespace Zone_Builder_Things_to_S06
                     //    objectType = "pointlight";
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "kdvpoint01"));
                     //    break;
-                    case "Brown Stalagmite":
-                    case "Brown Stalagmite (Tall)":
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "flc_stalactite"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(bool), false));
-                        break;
+                    //case "Brown Stalagmite":
+                    //case "Brown Stalagmite (Tall)":
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "flc_stalactite"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(bool), false));
+                    //    break;
                     default:
                         if (!unknownObjects.Contains(tempLine[0]))
                         {
@@ -377,7 +383,7 @@ namespace Zone_Builder_Things_to_S06
                 objectID++;
             }
 
-            //targetSet.Save(@"C:\Users\Knuxf\AppData\Local\Hyper_Development_Team\Sonic '06 Toolkit\Archives\84125\oqdcwmgt.noh\scripts\xenon\placement\rvz\set_rvz_test.set", true);
+            targetSet.Save(@"C:\Users\Knuxf\AppData\Local\Hyper_Development_Team\Sonic '06 Toolkit\Archives\36212\ycwhgojc.0im\scripts\xenon\placement\gfz\act2\old\set_gfz2_ambience.set", true);
             if (unknownObjects.Count > 0)
             {
                 Console.Clear();

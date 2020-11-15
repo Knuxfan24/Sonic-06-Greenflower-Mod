@@ -1,0 +1,39 @@
+KingdomValley.SonicA = inherits_from(ActionArea)
+function KingdomValley.SonicA.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct KingdomValley.SonicA")
+end
+function KingdomValley.SonicA.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
+    Game.LoadTerrain("stage/kdv/a/"),
+    Game.LoadStageSet("placement/gfz/act1/set_gfz_sonic.XML"),
+    Game.LoadStageSet("placement/gfz/act1/set_gfz_ambience.XML", "particle"),
+    Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_a.lua"),
+    Game.LoadPath("placement/gfz/act1/gfz_grind", "grind"),
+    Game.LoadPath("placement/gfz/act1/gfz_lightdash"),
+    Game.LoadSoundBank("sound/stage_kdv"),
+    Game.LoadVoiceBank("sound/voice_kdv_e"),
+    Game.PlayBGM("stg_gfz_act1")
+  })
+  Game.SetPlayer(-108, 0, 612, 135, "sonic_new.lua")
+end
+function KingdomValley.SonicA.FinalDemo1(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("RedVolcanoTrigger1")
+end
+function KingdomValley.SonicA.FinalDemo2(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("RedVolcanoTrigger2")
+end
+function KingdomValley.SonicA.FinalDemo3(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("RedVolcanoTrigger3")
+end
+function KingdomValley.SonicA.FinalDemo4(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("RedVolcanoTrigger4")
+end
+function KingdomValley.SonicA.FinalDemo5(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("RedVolcanoTrigger5")
+end
+function KingdomValley.SonicA.FinalDemo6(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("RedVolcanoTrigger6")
+end

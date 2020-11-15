@@ -1,0 +1,12 @@
+c_table_single_episode = {}
+c_table_single_act_trial = {
+  {
+    mission_file = "scripts/mission/2000/mission_20C3.lua",
+    episode = 0,
+    act_type = 7,
+    stage_type = 7,
+    mission_type = 2,
+    act_id = 24247
+  }
+}
+c_table_single_town_trial = {}

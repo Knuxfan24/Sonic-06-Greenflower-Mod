@@ -1,0 +1,1 @@
+Had to compress 2.2 Greenflower Zone Act 2 and 2.2 Red Volcano Zone Act 1 due to GitHub's 100MB file size limit.

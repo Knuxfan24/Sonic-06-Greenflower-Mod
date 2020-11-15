@@ -1,0 +1,20 @@
+KingdomValley.SonicD = inherits_from(ActionArea)
+function KingdomValley.SonicD.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct KingdomValley.SonicD")
+end
+function KingdomValley.SonicD.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
+    Game.LoadTerrain("stage/kdv/d/"),
+    Game.LoadStageSet("placement/gfz/xmas/set_gfz_xmas_sonic.XML"),
+    Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_d.lua"),
+    Game.LoadPath("placement/gfz/xmas/gfz_xmas_guide", "guide"),
+    Game.LoadPath("placement/gfz/xmas/gfz_xmas_lightdash"),
+    Game.LoadSoundBank("sound/stage_kdv"),
+    Game.LoadVoiceBank("sound/voice_kdv_e"),
+    Game.PlayBGM("stg_gfz_xmas")
+  })
+  Game.SetPlayer(0, 947.5, 288, 135, "sonic_new.lua")
+end

@@ -1,0 +1,21 @@
+KingdomValley.SonicB = inherits_from(ActionArea)
+function KingdomValley.SonicB.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct KingdomValley.SonicB")
+end
+function KingdomValley.SonicB.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
+    Game.LoadTerrain("stage/kdv/b/"),
+    Game.LoadStageSet("placement/gfz/act2/set_gfz2_sonic.XML"),
+    Game.LoadStageSet("placement/gfz/act2/set_gfz2_ambience.XML", "particle"),
+    Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_b.lua"),
+    Game.LoadPath("placement/gfz/act2/gfz2_grind", "grind"),
+    Game.LoadPath("placement/gfz/act2/gfz2_lightdash"),
+    Game.LoadSoundBank("sound/stage_kdv"),
+    Game.LoadVoiceBank("sound/voice_kdv_e"),
+    Game.PlayBGM("stg_gfz_act2")
+  })
+  Game.SetPlayer(-7920, 432, -13104, 110, "sonic_new.lua")
+end

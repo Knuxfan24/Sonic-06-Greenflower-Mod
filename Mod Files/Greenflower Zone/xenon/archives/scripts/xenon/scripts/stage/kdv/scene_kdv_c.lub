@@ -1,0 +1,88 @@
+Light = {
+  Ambient = {
+    Color = {
+      0.94,
+      0.74,
+      0.58,
+      0.5
+    }
+  },
+  Main = {
+    Color = {
+      0.63,
+      0.63,
+      0.78,
+      0.75
+    },
+    Direction_3dsmax = {
+      Position = {
+        0,
+        0,
+        1
+      },
+      Target = {
+        0,
+        0,
+        0
+      }
+    }
+  },
+  Sub = {
+    Color = {
+      0.94,
+      0.41,
+      0,
+      0.9
+    },
+    Direction_3dsmax = {
+      Position = {
+        0,
+        0,
+        -1
+      },
+      Target = {
+        0,
+        0,
+        0
+      }
+    }
+  }
+}
+OLS = {
+  SunColor = {
+    1,
+    1,
+    0.92,
+    13
+  },
+  BRay = {
+    0.19,
+    0.08,
+    0,
+    1.0E-4
+  },
+  BMie = {
+    0.06,
+    0.06,
+    0.05,
+    1.0E-4
+  },
+  G = 0.99
+}
+EnvMap = {
+  FileName = "stage/kdv/c/rvz_envmap.dds"
+}
+LOD = { 
+  Main = {
+    FarDistance = 10000,
+	ClipDistance = 20000,
+	ClumpClipDistance = 500000,
+	TerrainClipDistance = 5500
+  }
+}
+LightPresets = {
+  kdvpoint01 = {
+    Type = "Animation",
+    FileName = "object/kdv/pointlight/light_kdv_fireS.xni"
+  }
+}

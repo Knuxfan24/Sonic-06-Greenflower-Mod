@@ -1,1 +1,0 @@
-Terrain had to be compressed into a 7z file in order to fit in GitHub's 100mb file size limit.

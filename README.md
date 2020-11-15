@@ -1,6 +1,6 @@
-Open sourcing a lot of the stuff from my [Greenflower Zone mod](https://gamebanana.com/maps/208380) for the sake of archival and documentation purposes. This repo mostly just contains things that aren't related to the files within the actual game, as the Lua scripts can easily be inspected by opening the mod's archives.
+Open sourcing a lot of the stuff from my [Greenflower Zone mod](https://gamebanana.com/maps/208380) for the sake of archival and documentation purposes, as well as all the loose files extracted from the final Compressed U8 Archives.
 
-The Max Projects in this repo have also being modifed slightly, cleaning up the materials and including the skybox in the stage mesh while also HOPEFULLY making the texture path relative rather than being hardcoded to my 3D Objects folder. The collision projects were also remade from scratch, importing the collision from the actual .bin files and colouring them based on their material type.
+The Max Projects in this repo have also being modifed slightly, cleaning up the materials and including the skybox in the stage mesh while also HOPEFULLY making the texture path relative rather than being hardcoded to my 3D Objects folder. The collision meshes have also been merged with the main project rather than kept seperate as I did during development, making them easier to line up with the stage geometry. Said collision has also been remade based on the exported collision, with flat colours for each object depending on the collision flag.
 
 The Generations archives are also fresh imports, including the skybox and flowers, alongside the water, which I usually removed to make it easier to judge the Vertex Colours. The Generations Material Layers are also applied here for the sake of visual accuracy.
 

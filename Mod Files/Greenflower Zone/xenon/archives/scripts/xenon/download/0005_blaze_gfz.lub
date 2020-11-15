@@ -1,0 +1,41 @@
+c_table_single_episode = {
+  {
+    select_character = "select_blaze.lua",
+    mission_file = "scripts/mission/amigos/mission_blaze.lua",
+    translation_x = -90,
+    translation_y = -40,
+    translation_z = 670,
+    rotation_x = 0,
+    rotation_y = 0,
+    rotation_z = 0,
+    rotation_w = 1,
+    translation2_x = 0,
+    translation2_y = -40,
+    translation2_z = 670,
+    rotation2_x = 0,
+    rotation2_y = 0,
+    rotation2_z = 0,
+    rotation2_w = 1,
+    text_book = "text/msg_amigonames.mst",
+    name = "msg_blaze",
+    savecategory = 4
+  }
+}
+c_table_single_act_trial = {
+  {
+    mission_file = "scripts/mission/amigos/mission_blaze.lua",
+    episode = 8,
+    act_type = 0,
+    stage_type = 7,
+    mission_type = 2,
+    act_id = 24245
+  }
+}
+c_table_single_town_trial = {
+  {
+    mission_file = "scripts/mission/amigos/mission_blaze.lua",
+    name = "kingdomvalley",
+    text_book = "text/msg_mainmenu.mst",
+    act_id = 24245
+  }
+}
