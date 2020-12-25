@@ -10,6 +10,7 @@ function KingdomValley.SonicA.Setup(_ARG_0_)
     Game.LoadTerrain("stage/kdv/a/"),
     Game.LoadStageSet("placement/gfz/act1/set_gfz_sonic.XML"),
     Game.LoadStageSet("placement/gfz/act1/set_gfz_ambience.XML", "particle"),
+    Game.LoadStageSet("placement/gfz/act1/set_gfz_base.XML", "area"),
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_a.lua"),
     Game.LoadPath("placement/gfz/act1/gfz_grind", "grind"),
     Game.LoadPath("placement/gfz/act1/gfz_lightdash"),

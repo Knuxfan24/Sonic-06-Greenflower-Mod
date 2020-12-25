@@ -12,6 +12,7 @@ function KingdomValley.SonicC.Setup(_ARG_0_)
     Game.LoadStageSet("placement/rvz/set_rvz_sonic.XML"),
     Game.LoadStageSet("placement/rvz/set_rvz_particles.XML", "particle"),
     Game.LoadStageSet("placement/rvz/set_rvz_lights.XML", "pathobj"),
+    Game.LoadStageSet("placement/rvz/set_rvz_base.XML", "area"),
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_c.lua"),
     Game.LoadPath("placement/rvz/rvz_paths"),
     Game.LoadSoundBank("sound/stage_flc"),

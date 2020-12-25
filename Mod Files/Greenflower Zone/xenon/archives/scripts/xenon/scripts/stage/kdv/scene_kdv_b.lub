@@ -80,3 +80,53 @@ LOD = {
 	TerrainClipDistance = 5500
   }
 }
+LightPresets = {
+  Water_Main = {
+    Type = "Directional",
+    Color = {
+      0.46,
+      0.46,
+      1,
+      1
+    },
+    Direction_3dsmax = {
+      Position = {
+        0,
+        0,
+        1
+      }
+    }
+  },
+  Water_Sub = {
+    Type = "Directional",
+    Color = {
+      0.18,
+      0.18,
+      0.70,
+      1
+    },
+    Direction_3dsmax = {
+      Position = {
+        0,
+        0,
+        -1
+      }
+    }
+  },
+  Water_Ambient = {
+    Type = "Ambient",
+    Color = {
+      0.46,
+      0.47,
+      0.80,
+      1
+    },
+    Direction_3dsmax = {
+      Position = {
+        0,
+        0,
+        0
+      }
+    }
+  }
+}

@@ -77,7 +77,7 @@ LOD = {
     FarDistance = 10000,
 	ClipDistance = 20000,
 	ClumpClipDistance = 500000,
-	TerrainClipDistance = 5500
+	TerrainClipDistance = 22000
   }
 }
 LightPresets = {

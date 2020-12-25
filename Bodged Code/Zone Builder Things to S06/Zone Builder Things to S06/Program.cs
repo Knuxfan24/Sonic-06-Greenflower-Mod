@@ -15,29 +15,29 @@ namespace Zone_Builder_Things_to_S06
         {
             S06SetData targetSet = new S06SetData();
             
-            string[] thingList = File.ReadAllLines("Y:\\ThingsTHZ1.txt");
-            int plantNumber = 0;
-            foreach (string thing in thingList)
-            {
-                string[] tempLine = thing.Split('|'); //0 is Object, coords are 1,2,3, angle is 4
-                switch (tempLine[0])
-                {
-                    case "THZ Flower":
-                        using (StreamWriter log = new StreamWriter(@"Y:\THZPA0.ms", append: true))
-                        {
-                            log.WriteLine("mergeMAXFile \"C:\\Users\\Knuxf\\Documents\\3dsMax\\scenes\\Flowers\\THZPA0.max\" #useMergedMtlDups");
-                            log.WriteLine("a = $w1_gism_plantDa");
-                            log.WriteLine("a.Name = \"THZPA0_" + plantNumber + "\"");
-                            log.WriteLine("a.pos.x = " + tempLine[1]);
-                            log.WriteLine("a.pos.y = " + -(float.Parse(tempLine[3])));
-                            log.WriteLine("a.pos.z = " + tempLine[2]);
-                            //log.WriteLine("a.rotation = eulerAngles 0 0 " + tempLine[4]);
-                        }
-                        plantNumber++;
-                        break;
-                }
-            }
-            return;
+            string[] thingList = File.ReadAllLines("Y:\\Things.txt");
+            //int plantNumber = 0;
+            //foreach (string thing in thingList)
+            //{
+            //    string[] tempLine = thing.Split('|'); //0 is Object, coords are 1,2,3, angle is 4
+            //    switch (tempLine[0])
+            //    {
+            //        case "THZ Flower":
+            //            using (StreamWriter log = new StreamWriter(@"Y:\THZPA0.ms", append: true))
+            //            {
+            //                log.WriteLine("mergeMAXFile \"C:\\Users\\Knuxf\\Documents\\3dsMax\\scenes\\Flowers\\THZPA0.max\" #useMergedMtlDups");
+            //                log.WriteLine("a = $w1_gism_plantDa");
+            //                log.WriteLine("a.Name = \"THZPA0_" + plantNumber + "\"");
+            //                log.WriteLine("a.pos.x = " + tempLine[1]);
+            //                log.WriteLine("a.pos.y = " + -(float.Parse(tempLine[3])));
+            //                log.WriteLine("a.pos.z = " + tempLine[2]);
+            //                //log.WriteLine("a.rotation = eulerAngles 0 0 " + tempLine[4]);
+            //            }
+            //            plantNumber++;
+            //            break;
+            //    }
+            //}
+            //return;
             List<string> unknownObjects = new List<string> { };
 
             //SetObject dubObject = new SetObject();
@@ -275,41 +275,41 @@ namespace Zone_Builder_Things_to_S06
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "eGunner_Fix_Vulcan"));
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(float), 0f));
                     //    break;
-                    case "Water Ambience A (Large)":
-                        objectType = "ambience";
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "break"));
-                        break;
-                    case "Water Ambience C (Medium)":
-                        objectType = "ambience";
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge2"));
-                        break;
-                    case "Water Ambience D (Medium)":
-                        objectType = "ambience";
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope_hard"));
-                        break;
-                    case "Water Ambience E (Small)":
-                        objectType = "ambience";
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge"));
-                        break;
-                    case "Water Ambience F (Small)":
-                        objectType = "ambience";
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope"));
-                        break;
-                    case "Water Ambience G (Extra Large)":
-                        objectType = "ambience";
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rockfall"));
-                        break;
-                    case "Water Ambience H (Extra Large)":
-                        objectType = "ambience";
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
-                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rocksplash"));
-                        break;
+                    //case "Water Ambience A (Large)":
+                    //    objectType = "ambience";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "break"));
+                    //    break;
+                    //case "Water Ambience C (Medium)":
+                    //    objectType = "ambience";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge2"));
+                    //    break;
+                    //case "Water Ambience D (Medium)":
+                    //    objectType = "ambience";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope_hard"));
+                    //    break;
+                    //case "Water Ambience E (Small)":
+                    //    objectType = "ambience";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "bridge"));
+                    //    break;
+                    //case "Water Ambience F (Small)":
+                    //    objectType = "ambience";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rope"));
+                    //    break;
+                    //case "Water Ambience G (Extra Large)":
+                    //    objectType = "ambience";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rockfall"));
+                    //    break;
+                    //case "Water Ambience H (Extra Large)":
+                    //    objectType = "ambience";
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "stage_kdv"));
+                    //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rocksplash"));
+                    //    break;
                     //case "Torch Flower":
                     //    objectType = "particle";
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "map_flc"));
@@ -328,6 +328,10 @@ namespace Zone_Builder_Things_to_S06
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(string), "flc_stalactite"));
                     //    s06Object.Parameters.Add(new SetObjectParam(typeof(bool), false));
                     //    break;
+                    case "Rollout Rock":
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(string), "rvz_checkerball"));
+                        s06Object.Parameters.Add(new SetObjectParam(typeof(bool), false));
+                        break;
                     default:
                         if (!unknownObjects.Contains(tempLine[0]))
                         {
@@ -383,7 +387,7 @@ namespace Zone_Builder_Things_to_S06
                 objectID++;
             }
 
-            targetSet.Save(@"C:\Users\Knuxf\AppData\Local\Hyper_Development_Team\Sonic '06 Toolkit\Archives\36212\ycwhgojc.0im\scripts\xenon\placement\gfz\act2\old\set_gfz2_ambience.set", true);
+            targetSet.Save(@"C:\Users\Knuxf\AppData\Local\Hyper_Development_Team\Sonic '06 Toolkit\Archives\59061\y2xofjq2.fd1\scripts\xenon\placement\rvz\wheresalltheobjects.set", true);
             if (unknownObjects.Count > 0)
             {
                 Console.Clear();

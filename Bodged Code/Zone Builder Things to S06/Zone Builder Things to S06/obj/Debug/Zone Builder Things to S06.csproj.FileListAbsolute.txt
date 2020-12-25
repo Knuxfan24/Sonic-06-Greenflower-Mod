@@ -2,7 +2,6 @@ C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builde
 C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.exe
 C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\Zone Builder Things to S06.pdb
 C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\HedgeLib.dll
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builder Things to S06\Zone Builder Things to S06\bin\Debug\HedgeLib.pdb
 C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.csprojAssemblyReference.cache
 C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\Zone Builder Things to S06\Zone Builder Things to S06\obj\Debug\Zone Builder Things to S06.csproj.CoreCompileInputs.cache

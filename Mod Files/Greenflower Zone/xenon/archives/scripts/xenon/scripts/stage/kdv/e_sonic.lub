@@ -10,6 +10,7 @@ function KingdomValley.SonicE.Setup(_ARG_0_)
     Game.LoadTerrain("stage/kdv/e/"),
     Game.LoadStageSet("placement/gfz/act1/old/set_gfz_sonic.XML"),
     Game.LoadStageSet("placement/gfz/act1/old/set_gfz_ambience.XML", "particle"),
+    Game.LoadStageSet("placement/gfz/act1/old/set_gfz_base.XML", "area"),
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_e.lua"),
     Game.LoadPath("placement/gfz/act1/old/gfz_lightdash"),
     Game.LoadSoundBank("sound/stage_kdv"),

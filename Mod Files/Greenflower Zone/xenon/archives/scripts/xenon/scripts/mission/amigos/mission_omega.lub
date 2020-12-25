@@ -5,7 +5,7 @@ g_mission_information = {
   mission_set_default = "placement/gfz/act1/set_gfz_omega.XML",
   mission_event_start = "",
   mission_event_end = "",
-  mission_text = "text/msg_twn_sonic.mst",
+  mission_text = "text/msg_sonicsecret.mst",
   mission_is_battle = true
 }
 g_result_kdv = {
@@ -48,12 +48,28 @@ function on_event(_ARG_0_, _ARG_1_)
   end
 end
 function on_talk_icon(_ARG_0_, _ARG_1_)
+  if _ARG_1_ == "msg_test_message" then
+    g_message_icon = c_icon_chat
+  end
 end
 function on_talk_setup(_ARG_0_, _ARG_1_)
+  if _ARG_1_ == "msg_test_message" then
+    SetAnimationTalkWith(_ARG_0_, "talk0", "angry")
+    g_name_setuped = "msg_redxvi"
+    g_message_setuped = _ARG_1_
+  end
 end
-function on_talk_oepn(_ARG_0_, _ARG_1_)
+function on_talk_open(_ARG_0_, _ARG_1_)
 end
 function on_talk_close(_ARG_0_, _ARG_1_)
+  if _ARG_1_ == "msg_test_message" then
+    g_mission_information.mission_string = "msg_act12"
+    g_mission_information.mission_terrain = "stage/kdv/c/"
+    g_mission_information.mission_area = "kdv/sonic/c"
+    g_mission_information.mission_set_default = "placement/rvz/set_rvz_omega.XML"
+    g_mission_information.mission_is_battle = true
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  end
 end
 function on_goal(_ARG_0_)
   Result(_ARG_0_, "g_result_kdv")

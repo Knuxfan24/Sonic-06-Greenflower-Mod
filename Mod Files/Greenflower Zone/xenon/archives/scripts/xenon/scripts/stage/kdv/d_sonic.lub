@@ -9,6 +9,7 @@ function KingdomValley.SonicD.Setup(_ARG_0_)
     Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
     Game.LoadTerrain("stage/kdv/d/"),
     Game.LoadStageSet("placement/gfz/xmas/set_gfz_xmas_sonic.XML"),
+    Game.LoadStageSet("placement/gfz/xmas/set_gfz_xmas_base.XML", "area"),
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_d.lua"),
     Game.LoadPath("placement/gfz/xmas/gfz_xmas_guide", "guide"),
     Game.LoadPath("placement/gfz/xmas/gfz_xmas_lightdash"),
