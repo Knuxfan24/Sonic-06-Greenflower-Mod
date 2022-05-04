@@ -1,7 +1,0 @@
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\XNO Converter is bollocks\XNO Converter is bollocks\bin\Debug\XNO Converter is bollocks.exe.config
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\XNO Converter is bollocks\XNO Converter is bollocks\bin\Debug\XNO Converter is bollocks.exe
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\XNO Converter is bollocks\XNO Converter is bollocks\bin\Debug\XNO Converter is bollocks.pdb
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\XNO Converter is bollocks\XNO Converter is bollocks\obj\Debug\XNO Converter is bollocks.csprojAssemblyReference.cache
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\XNO Converter is bollocks\XNO Converter is bollocks\obj\Debug\XNO Converter is bollocks.csproj.CoreCompileInputs.cache
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\XNO Converter is bollocks\XNO Converter is bollocks\obj\Debug\XNO Converter is bollocks.exe
-C:\Users\Knuxf\Documents\GitHub\Sonic-06-Greenflower-Mod\Bodged Code\XNO Converter is bollocks\XNO Converter is bollocks\obj\Debug\XNO Converter is bollocks.pdb
