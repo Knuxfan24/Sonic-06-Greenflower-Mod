@@ -1,0 +1,20 @@
+KingdomValley.TagHUB = inherits_from(ActionArea)
+function KingdomValley.TagHUB.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct KingdomValley.TagHUB")
+end
+function KingdomValley.TagHUB.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/render_gamemode_tag.lua"),
+    Game.LoadTerrain("stage/kdv/hub/"),
+    Game.LoadStageSet("placement/set_hub.XML"),
+    Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_e.lua"),
+    Game.LoadSoundBank("sound/stage_kdv"),
+    Game.LoadVoiceBank("sound/voice_kdv_e"),
+    Game.PlayBGM("stg_tag_hub")
+  })
+  Game.SetPlayer(0, 0, 0, 0, "sonic_new.lua", 0)
+  Game.SetPlayer(0, 0, 0, 0, "shadow.lua", 1)
+  Game.Log("KingdomValley.TagHUB:Setup")
+end

@@ -8,7 +8,7 @@ function KingdomValley.TagA.Setup(_ARG_0_)
   _ARG_0_:AddComponent({
     Game.LoadRenderScript("scripts/render/render_gamemode_tag.lua"),
     Game.LoadTerrain("stage/kdv/a/"),
-    Game.LoadStageSet("placement/gfz/act1/set_gfz_sonic.XML"),
+    Game.LoadStageSet("scripts/mission/3000/set_kdv_a_tag.XML"),
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_a.lua"),
     Game.LoadPath("placement/gfz/act1/gfz_grind", "grind"),
     Game.LoadPath("placement/gfz/act1/gfz_lightdash"),
@@ -16,7 +16,14 @@ function KingdomValley.TagA.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_kdv_e"),
     Game.PlayBGM("stg_gfz_multi")
   })
-  Game.SetPlayer(-324, 0, 612, 135, "sonic_new.lua", 0)
-  Game.SetPlayer(-108, 0, 828, 135, "shadow.lua", 1)
+  Game.SetGenArea({
+    size = {
+      60 * 100,
+      60 * 100,
+      60 * 100
+    }
+  })
+  Game.SetPlayer(0, 0, 0, 0, "sonic_new.lua", 0)
+  Game.SetPlayer(0, 0, 0, 0, "shadow.lua", 1)
   Game.Log("KingdomValley.TagA:Setup")
 end

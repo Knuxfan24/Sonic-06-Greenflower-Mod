@@ -1,0 +1,74 @@
+g_mission_information = {
+  mission_string = "msg_tag_hub",
+  mission_area = "kdv/tag/hub",
+  mission_terrain = "stage/kdv/hub/",
+  mission_set_default = "placement/set_hub.XML",
+  mission_text = "text/msg_system.mst",
+  mission_is_battle = true,
+  mission_userule = "battle"
+}
+g_result_battle = {stagename = "TOWN", finish = "result_end"}
+function main(_ARG_0_)
+end
+function on_event(_ARG_0_, _ARG_1_)
+  if _ARG_1_ == "22gfz1" then
+    g_mission_information.mission_terrain = "stage/kdv/a/"
+    g_mission_information.mission_area = "kdv/tag/a"
+    g_mission_information.mission_set_default = "scripts/mission/4000/set_kdv_a_battle.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_act08"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  elseif _ARG_1_ == "22gfz2" then
+    g_mission_information.mission_terrain = "stage/kdv/b/"
+    g_mission_information.mission_area = "kdv/tag/b"
+    g_mission_information.mission_set_default = "scripts/mission/4000/set_kdv_b_battle.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_act08"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  elseif _ARG_1_ == "22rvz1" then
+    g_mission_information.mission_terrain = "stage/kdv/c/"
+    g_mission_information.mission_area = "kdv/tag/c"
+    g_mission_information.mission_set_default = "scripts/mission/4000/set_kdv_c_battle.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_act08"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  elseif _ARG_1_ == "xmasgfz1" then
+    g_mission_information.mission_terrain = "stage/kdv/d/"
+    g_mission_information.mission_area = "kdv/tag/d"
+    g_mission_information.mission_set_default = "scripts/mission/4000/set_kdv_d_battle.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_act08"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  elseif _ARG_1_ == "21gfz1" then
+    g_mission_information.mission_terrain = "stage/kdv/e/"
+    g_mission_information.mission_area = "kdv/tag/e"
+    g_mission_information.mission_set_default = "scripts/mission/4000/set_kdv_e_battle.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_act08"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  elseif _ARG_1_ == "21gfz2" then
+    g_mission_information.mission_terrain = "stage/kdv/f/"
+    g_mission_information.mission_area = "kdv/tag/f"
+    g_mission_information.mission_set_default = "scripts/mission/4000/set_kdv_f_battle.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_act08"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  elseif _ARG_1_ == "demo2thz1" then
+    g_mission_information.mission_terrain = "stage/kdv/g/"
+    g_mission_information.mission_area = "kdv/tag/g"
+    g_mission_information.mission_set_default = "scripts/mission/4000/set_kdv_g_battle.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_act08"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  elseif _ARG_1_ == "result_end" then
+    g_mission_information.mission_terrain = "stage/kdv/hub/"
+    g_mission_information.mission_area = "kdv/tag/hub"
+    g_mission_information.mission_set_default = "placement/set_hub.XML"
+    g_mission_information.mission_is_battle = true
+    g_mission_information.mission_string = "msg_tag_hub"
+    ChangeArea(_ARG_0_, g_mission_information.mission_area)
+  end
+end
+function on_goal(_ARG_0_)
+  Result(_ARG_0_, "g_result_battle")
+end

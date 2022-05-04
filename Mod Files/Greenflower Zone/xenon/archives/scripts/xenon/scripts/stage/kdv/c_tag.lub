@@ -1,0 +1,31 @@
+KingdomValley.TagC = inherits_from(ActionArea)
+function KingdomValley.TagC.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct KingdomValley.TagC")
+end
+function KingdomValley.TagC.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadParticle("particle/map_flc.plc"),
+    Game.LoadRenderScript("scripts/render/render_gamemode_tag.lua"),
+    Game.LoadTerrain("stage/kdv/c/"),
+    Game.LoadStageSet("scripts/mission/3000/set_kdv_c_tag.XML"),
+    Game.LoadStageSet("placement/rvz/set_rvz_particles.XML", "particle"),
+    Game.LoadStageSet("placement/rvz/set_rvz_lights.XML", "pathobj"),
+    Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_c.lua"),
+    Game.LoadPath("placement/rvz/rvz_paths"),
+    Game.LoadSoundBank("sound/stage_flc"),
+    Game.LoadVoiceBank("sound/voice_kdv_e"),
+    Game.PlayBGM("stg_rvz_multi")
+  })
+  Game.SetGenArea({
+    size = {
+      60 * 100,
+      60 * 100,
+      60 * 100
+    }
+  })
+  Game.SetPlayer(-13320, -198, 20276, 90, "sonic_new.lua", 0)
+  Game.SetPlayer(-13320, -198, 20476, 90, "shadow.lua", 1)
+  Game.Log("KingdomValley.TagC:Setup")
+end

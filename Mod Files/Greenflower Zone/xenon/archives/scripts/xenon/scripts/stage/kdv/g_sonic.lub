@@ -7,7 +7,7 @@ function KingdomValley.SonicG.Setup(_ARG_0_)
   ActionArea.Setup(_ARG_0_)
   _ARG_0_:AddComponent({
     Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
-    Game.LoadTerrain("stage/kdv/f/"),
+    Game.LoadTerrain("stage/kdv/g/"),
     Game.LoadStageSet("placement/thz/set_thz_sonic.XML"),
     Game.LoadStageSet("placement/thz/set_thz_ambience.XML", "particle"),
     Game.LoadStageSet("placement/thz/set_thz_base.XML", "area"),

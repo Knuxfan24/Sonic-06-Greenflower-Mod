@@ -1,0 +1,28 @@
+KingdomValley.TagG = inherits_from(ActionArea)
+function KingdomValley.TagG.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct KingdomValley.TagG")
+end
+function KingdomValley.TagG.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/render_gamemode_tag.lua"),
+    Game.LoadTerrain("stage/kdv/g/"),
+    Game.LoadStageSet("scripts/mission/3000/set_kdv_g_tag.XML"),
+    Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_g.lua"),
+    Game.LoadPath("placement/thz/thz_lightdash"),
+    Game.LoadSoundBank("sound/stage_kdv"),
+    Game.LoadVoiceBank("sound/voice_kdv_e"),
+    Game.PlayBGM("stg_thz_act1_old")
+  })
+  Game.SetGenArea({
+    size = {
+      60 * 100,
+      60 * 100,
+      60 * 100
+    }
+  })
+  Game.SetPlayer(0, 0, 0, 0, "sonic_new.lua", 0)
+  Game.SetPlayer(0, 0, 0, 0, "shadow.lua", 1)
+  Game.Log("KingdomValley.TagG:Setup")
+end

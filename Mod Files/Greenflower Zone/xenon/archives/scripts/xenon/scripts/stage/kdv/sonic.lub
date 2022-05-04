@@ -7,7 +7,14 @@ KingdomValley.Sonic.scripts = {
   "scripts/stage/kdv/e_sonic.lua",
   "scripts/stage/kdv/f_sonic.lua",
   "scripts/stage/kdv/g_sonic.lua",
-  "scripts/stage/kdv/a_tag.lua"
+  "scripts/stage/kdv/a_tag.lua",
+  "scripts/stage/kdv/b_tag.lua",
+  "scripts/stage/kdv/c_tag.lua",
+  "scripts/stage/kdv/d_tag.lua",
+  "scripts/stage/kdv/e_tag.lua",
+  "scripts/stage/kdv/f_tag.lua",
+  "scripts/stage/kdv/g_tag.lua",
+  "scripts/stage/kdv/tag_hub.lua"
 }
 function KingdomValley.Sonic.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -20,7 +27,14 @@ function KingdomValley.Sonic.constructor(_ARG_0_)
     ["Area E"] = KingdomValley.SonicE,
     ["Area F"] = KingdomValley.SonicF,
     ["Area G"] = KingdomValley.SonicG,
-    ["Area A(Tag)"] = KingdomValley.TagA
+    ["Area A(Tag)"] = KingdomValley.TagA,
+    ["Area B(Tag)"] = KingdomValley.TagB,
+    ["Area C(Tag)"] = KingdomValley.TagC,
+    ["Area D(Tag)"] = KingdomValley.TagD,
+    ["Area E(Tag)"] = KingdomValley.TagE,
+    ["Area F(Tag)"] = KingdomValley.TagF,
+    ["Area G(Tag)"] = KingdomValley.TagG,
+    ["HUB(Tag)"] = KingdomValley.TagHUB
   }
   _ARG_0_.area = "Area A"
   _ARG_0_.result_name = 0
